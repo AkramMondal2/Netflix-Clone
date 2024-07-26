@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000000;
+    color: #ffffff;
+}
+/* **************************************header******************************** */
+header{
+    position: relative;
+    height: 90vh;
+    background-image: url("./asset/images/hero-background.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box{
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    top: 0;
+    background-color: #000000;
+    opacity: 0.5;
+}
+.contant{
+    position: relative;
+    z-index: 10;
+    padding: 0px 24px;
+}
+.contant nav{
+    width: 75vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center ;
+    padding-top: 30px;
+}
+.contant nav :nth-child(2){
+    display: flex;
+    gap: 20px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    background-color: #ff0000;
+    font-weight: 500;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #cd0505;
+    transition: all 1s ease-out;
+}
+.primary{
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    font-size: 16px;
+    gap: 5px;
+}
+.primary:hover{
+    background-color: transparent;
+}
+.primary::before{
+    content: url("/asset/images/language-24.png");
+}
+.primary::after{
+    content: url("/asset/images/arrow-down-24.png");
+}
+.headding{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20vh;
+    gap: 30px;
+}
+.headding > span:first-child{
+    font-size: 48px;
+    font-weight: 900;
+}
+.headding > span:nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+}
+.headding > span:nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+}
+.login{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.login :first-child{
+    font-size: 16px;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 0.5px solid #ffffff;
+    border-radius: 5px;
+    width: 300px;
+}
+.login :first-child::placeholder{
+    color: #b8b2b2;
+}
+.getStarted{
+    font-size: 24px;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+.seperator{
+    height: 10px;
+    background-color: #3f3d3d;
+}
+/* ***********************************main******************************** */
+/* *************************************first section************************** */
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 100px 0px;
+}
+.secDes{
+    width: 35vw;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.secDes h2{
+  font-size: 60px;
+  font-weight: 900;
+}
+.secDes span{
+    font-size: 22px;
+    font-weight: 500;
+}
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 66px;
+    right: 32px;
+    width: 450px;
+}
+.third .secImg video {
+    position: absolute;
+    top: 50px;
+    right: 105px;
+    width: 350px;
+}
+
+/* ****************************Question************************* */
+.Question{
+    text-align: center;
+    margin: 100px 20px;
+}
+.Question h2{
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+.Question p{
+    font-size: 25px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.quesAns{
+    width: 75vw;
+    margin: auto;
+    background-color: #333131;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: start;
+}
+.quesAns:hover{
+    cursor: pointer;
+    background-color: #5b5959;
+}
+/* **********************************footer**************************** */
+footer{
+    width: 80vw;
+    margin: 70px auto;
+}
+footer p{
+    font-size: 18px;
+    color: #d4d0d0;
+    margin: 25px 0px;
+}
+footer a{
+    color: #d4d0d0;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer ul li{
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+/* ********************************@media**************************** */
+@media screen and (max-width: 950px) {
+    .contant nav{
+        flex-wrap: wrap;
+        width: 90vw;
+    }
+    nav img{
+        width: 110px;
+    }
+    nav :nth-child(2){
+        flex-wrap: wrap;
+    }
+    .primary{
+      font-size: 0px;       
+    }
+    .headding{
+        margin-top: 15vh;
+    }
+    .headding > span:first-child {
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .headding > span:nth-child(2) {
+        font-size: 22px;
+    }
+    .login{
+        gap: 25px;
+    }
+    .login :first-child{
+        width: 250px;
+    }
+    .first{
+        flex-direction: column;
+        gap: 40px;
+        padding: 80px 0px;
+    }
+    .secImg img {
+        width: 455px;
+    }
+    .secImg video{
+        right: 42px;
+        width: 355px;
+    }
+    .secDes{
+        width: 70vw;
+        text-align: center;
+    }
+    .secDes h2{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .secDes span{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .third .secImg video {
+        position: absolute;
+        top: 40px;
+        right: 82px;
+        width: 286px;
+    }
+    .footer{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media screen and (max-width: 550px) {
+    .headding{
+        margin-top: 12vh;
+        gap: 10px;
+    }
+    .headding > span:first-child {
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .headding > span:nth-child(2) {
+        font-size: 20px;
+    }
+    .headding > span:nth-child(3){
+        font-size: 20px;
+    }
+    .login{
+        gap: 25px;
+    }
+    .login :first-child{
+        width: 47vw;
+    }
+    .getStarted{
+        font-size: 16px;
+        font-weight: 500;
+        padding: 10px 20px;
+    }
+    .secImg img {
+        width: 255px;
+    }
+    .secImg video{
+        top: 37px;
+        right: 33px;
+        width: 190px;
+    }
+    .third .secImg video {
+        position: absolute;
+        top: 23px;
+        right: 51px;
+        width: 155px;
+    }
+    .Question h2{
+        font-size: 40px;
+    }
+    
+}
